@@ -1,0 +1,9 @@
+#video {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:chartreuse
+}
+main {
+  background-color: dimgray;
+}

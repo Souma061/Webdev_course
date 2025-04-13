@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEW PROJECT</title>
+</head>
+
+<body>
+  <form>
+    <textarea name="comment" rows="4" cols="50">
+          Enter your comment here...
+    </textarea>
+    <select name="Country">
+      <option value="India">India</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Bhutan">Bhutan</option>
+    </select>
+    <div id="user">
+      <label>Username:</label>
+
+      <input type="text" name="username" pattern="[a-zA-Z0-9]+" required>
+      <small>Only letters and numbers are allowed.</small>
+      <form action="/submit.php" method="POST">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </form>
+
+  </form>
+
+</body>
+
+</html>
