@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   hey this is my first website.<br>
   <a href="https://www.google.com">Google</a><br>
@@ -19,6 +21,41 @@
   <script>
     console.log("Welcome to my website!");
   </script>
-  
+  <form action="/submit" method="post">
+    <!-- Text input for username -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Radio buttons for gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+    <textarea name="comment" rows="4" cols="50">
+      Enter your comment ...
+</textarea>
+    <form action="/submit">
+      <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+      <select name="fruits">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  </form>
+
 </body>
+
 </html>
