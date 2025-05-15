@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise 8</title>
+
+  <style>
+    .container {
+      background-color: aqua;
+      height: 50vh;
+      width: 80vw;
+      position: relative;
+    }
+
+    .box {
+      background-color: brown;
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 50px;
+      animation: bounce 4s ease-out infinite alternate-reverse pause;
+
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translate(0px, 0px);
+      }
+      10% {
+        transform: translate(30px, -100px);
+      }
+      20% {
+        transform: translate(60px, 0px);
+      }
+      30% {
+        transform: translate(90px, -80px);
+      }
+      40% {
+        transform: translate(120px, 0px);
+      }
+      50% {
+        transform: translate(150px, -60px);
+      }
+      60% {
+        transform: translate(180px, 0px);
+      }
+      70% {
+        transform: translate(210px, -40px);
+      }
+      80% {
+        transform: translate(240px, 0px);
+      }
+      90% {
+        transform: translate(270px, -20px);
+      }
+      100% {
+        transform: translate(400px, -12px);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+
+    </div>
+  </div>
+
+</body>
+
+</html>

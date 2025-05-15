@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tables</title>
+  <style>
+    /* styles.css */
+
+/* Basic table layout */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+/* Header row styling */
+thead {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+/* Table header cells */
+th {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 2px solid #34495e;
+}
+
+/* Table body cells */
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background-color: #e0f7fa;
+  cursor: pointer;
+}
+
+/* Optional: make the first column bold */
+tbody td:first-child {
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+     <tr>
+      <th>Name</th>
+      <th>Role</th>
+      <th>Salary</th>
+
+
+     </tr>
+
+
+    </thead>
+    <tbody>
+      <tr>
+        <td>Souma</td>
+        <td>Software Engineer</td>
+        <td>$70000</td>
+      </tr>
+        <tr>
+        <td>Ani</td>
+        <td>Software Engineer</td>
+        <td>$70000</td>
+      </tr>
+        <tr>
+        <td>Sagnik</td>
+        <td>Software Engineer</td>
+        <td>$70000</td>
+      </tr>
+        <tr>
+        <td>Soumik</td>
+        <td>Software Engineer</td>
+        <td>$70000</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+</body>
+</html>

@@ -1,9 +1,19 @@
-#video {
-  display:flex;
+#box {
+  background-color: aqua;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  background-color:chartreuse
 }
-main {
-  background-color: dimgray;
+.box1 {
+  height:100px;
+  width:100px;
+  background-color: red;
+  margin:10px;
+  
+}
+
+.box2 {
+  height:100px;
+  width:100px;
+  background-color: blue;
+  margin:10px;
 }

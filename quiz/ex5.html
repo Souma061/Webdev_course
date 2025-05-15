@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EXERCISE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      background-color: cadetblue;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    .boxes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      padding: 20px;
+      background-color: coral;
+      height: 40vh;
+      gap: 30px;
+    }
+
+    .box1, .box2 {
+      height: 200px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    .box1 {
+      background-color: blue;
+    }
+
+    .box2 {
+      background-color: rgba(0, 255, 76);
+      color: black;
+    }
+
+    .logo {
+      position: fixed;
+      right: 40px;
+      bottom: 160px; /* adjusts the position above the .souma box */
+      z-index: 10;
+    }
+
+    .logo img {
+      width: 80px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .souma {
+      padding: 50px;
+      margin: 10px auto;
+      width: 50vw;
+      border-radius: 50px;
+      background-color: rgba(0, 255, 76);
+      text-align: center;
+      font-weight: 500;
+      font-family: system-ui, sans-serif;
+    }
+
+
+    .footer {
+      background-color: cadetblue;
+      padding: 10px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: auto;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <div class="boxes">
+    <div class="box1">I AM BOX 1</div>
+    <div class="box2">I AM BOX 2</div>
+  </div>
+
+  <div class="logo">
+    <img src="https://e7.pngegg.com/pngimages/700/156/png-clipart-organization-professional-logo-junior-frontend-developer-freelancer-internal-revenue-service-blue-text.png" alt="LOGO">
+  </div>
+
+  <div class="souma">Welcome to this Sigma Web Development express</div>
+
+  <div class="footer">
+    <p>All rights reserved &copy; 2025</p>
+  </div>
+</body>
+</html>

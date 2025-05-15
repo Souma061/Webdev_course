@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lake Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 360px;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .na1 {
+      border-radius: 20px;
+      background-color: #e0f7fa;
+      color: #00796b;
+      border: none;
+      padding: 5px 15px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: default;
+    }
+
+    .head {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .text {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      display: block;
+      margin: 0 auto;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .footer:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://media.cntraveler.com/photos/5ad79fc6fa45355065f2047c/master/w_320,c_limit/Moraine-Lake,-Banff-National-Park-GettyImages-517747003.jpg" alt="Lake">
+
+    <div class="tags">
+      <button class="na1">NATURE</button>
+      <button class="na1">LAKE</button>
+    </div>
+
+    <h2 class="head">Lake Card</h2>
+    <p class="text">
+      Discover the serene beauty of the Moraine Lake nestled in Banff National Park. Surrounded by towering mountains and vibrant waters, it's a peaceful retreat into nature’s arms.
+    </p>
+
+    <button class="footer">READ MORE</button>
+  </div>
+</body>
+</html>
