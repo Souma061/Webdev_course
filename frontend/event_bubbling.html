@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Bubbling</title>
+  <style>
+    .children {
+      height: 34px;
+      width: 34px;
+      background-color: red;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="childcontainer">
+      <div class="children">
+        box
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector(".children").addEventListener("click", (e) => {
+      e.stopPropagation();
+      alert("I AM A CHILD");
+    });
+
+    document.querySelector(".childcontainer").addEventListener("click", (e) => {
+      alert("I AM A HACKER");
+    });
+
+    document.addEventListener("keydown", (e) => {
+      console.log("Key pressed:", e.key);
+    });
+
+    function randomcolor() {
+      const color1 = Math.ceil(Math.random() * 255);
+      const color2 = Math.ceil(Math.random() * 255);
+      const color3 = Math.ceil(Math.random() * 255);
+      return `rgb(${color1},${color2},${color3})`;
+    }
+
+    setInterval(() => {
+      document.querySelector(".children").style.backgroundColor = randomcolor();
+    }, 3000);
+  </script>
+</body>
+
+</html>
